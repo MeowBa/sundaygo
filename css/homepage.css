@@ -1,0 +1,478 @@
+/* #main-content {
+    margin: 20px 10px;
+} */
+
+#content {
+    float: right;
+    /* border: 1px solid #aaaaaa; */
+    padding: 15px;
+    /* margin-left: 135px; */
+    /* min-height: 2000px; */
+    /* color: #aaaaaa; */
+    /* width: calc(100% - 215px); */
+}
+
+/* 側邊欄 */
+#sidebar {
+    float: left;
+    width: 200px;
+    color: #333333;
+    will-change: min-height;
+}
+
+/* #sidebar2 {
+    float: left;
+    width: 200px;
+    color: #333333;
+    will-change: min-height;
+}*/
+
+#sidebar .sidebar__inner {
+    border: 2px solid #F29F04;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    /* will-change: position, transform; */
+}
+
+#sidebar .sidebar__inner2 {
+    border: 2px solid #F29F04;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+    margin-top: 20px;
+}
+
+/* 篩選按鈕 */
+.filterBtn {
+    border: 0;
+    width: 5%;
+    background-color: #FAEF8B;
+    color: #8C5C02;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 0;
+    margin:2px 5px;
+}
+
+.filterBtn:hover {
+    color: #8C5C02;
+    background-color: #F29F04;
+    transform: scale(1.1);
+    /* border: 2px #FAEF8B solid; */
+}
+
+/* .clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+} */
+
+/* 側邊手風琴 */
+.accordion {
+    background-color: #FFFFFF;
+    color: #444;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* 懸停變色 */
+/* .active, */
+.accordion:hover {
+    background-color: #FAEF8B;
+}
+
+/* 为手风琴面板设计样式。 默认隐藏 */
+.panel {
+    padding: 0 12px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* 设置 +、- 标志 */
+.accordion:after {
+    content: '\142F';
+    /* Unicode 字符 + 号 */
+    /* color: #777; */
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+/* 篩選框動態字符 */
+.accordion:active:after {
+    /* content: "&#711"; */
+    content: '\1431';
+    /* 愛心 */
+    /* content: '\2661'; */
+    /* Unicode 字符 - 号 */
+}
+
+/* .homerightup{
+    float:right;
+} */
+
+/* 商品介紹欄 */
+.homeProduct {
+    border: #F29F04 solid 2px;
+    border-radius: 5px;
+    height: 250px;
+    margin-bottom: 30px;
+    width: 1000px;
+    padding: 10px;
+}
+
+.proPic:hover {
+    cursor: pointer;
+     transform: scale(1.1);
+     transition:  0.5s linear
+     /* transition-timing-function: linear; */
+
+    /* transition ;  */
+}
+.introp:focus{
+    filter: invert(13%) sepia(69%) saturate(7452%) hue-rotate(343deg) brightness(98%) contrast(108%);
+background-color: transparent;
+}   
+
+/* 商品標題 */
+.introp{
+    /* float: left; */
+    /* background-color: blue; */
+    font-size: larger;
+}
+
+/* .introp+img{
+    z-index: 20;
+    filter: invert(13%) sepia(69%) saturate(7452%) hue-rotate(343deg) brightness(98%) contrast(108%);
+} */
+/* 愛心icon */
+.introimg{
+    float: right;
+    z-index: 20;
+    
+}
+.introimg:hover {
+    filter: invert(13%) sepia(69%) saturate(7452%) hue-rotate(343deg) brightness(98%) contrast(108%);
+    transform: scale(1.5);
+    transition:  1s linear
+}
+.introimg:focus{
+    filter: invert(13%) sepia(69%) saturate(7452%) hue-rotate(343deg) brightness(98%) contrast(108%);
+
+}
+/* 
+.icno+h3>p::after {
+    content: "\2661";
+} */
+
+/* 商品圖片框 */
+.picPlace {
+    /* width: 33%; */
+
+    width: 300px;
+    /* height: 290px; */
+    height: 240px;
+    /* object-fit: contain; */
+    float: left;
+    /* border: 60px; */
+    /* border-radius: 5px; */
+    margin: 5px 5px;
+    /* background-color: blue; */
+    margin-right: 50px;
+}
+.picPlace2 {
+    /* width: 33%; */
+
+    width: 00px;
+    /* height: 290px; */
+    height: 140px;
+    /* object-fit: contain; */
+    /* float: left;  */
+    /* border: 60px; */
+    /* border-radius: 5px; */
+    margin: 5px 5px;
+    /* background-color: blue; */
+    margin-right: 50px;
+}
+
+/* 商品圖片 */
+.proPic {
+    object-fit: cover;
+    min-height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    /* background-color: aqua; */
+    /* width: auto;
+    height: auto; */
+    z-index: 5;
+}
+/* .proPic:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+} */
+
+/* 介紹欄 */
+.iteminfo {
+    /* background-color: red; */
+    white-space: normal;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    line-height: 2;
+    -webkit-line-clamp: 3;
+    text-align:justify;
+    max-height: 100px;
+    text-overflow: ellipsis;
+    /* z-index: 20; */
+}
+
+/* 地區標籤位置 */
+.tagplace {
+    float: left;
+    /* margin-right: 50px; */
+    /* margin-left: 50px; */
+    margin: 0 10px;
+}
+
+/* 商品星星 */
+
+.prostar .collectstar{
+   width:100px;
+}
+
+/* .prostar img:hover {
+    background-image: url("./_img/1.png");
+} */
+
+/* 價格欄位 */
+.homepri {
+    font-size: larger;
+    font-weight: bolder;
+    width: 100px;
+    float: right;
+    /* background-color: #8C5C02; */
+    text-align: right;
+    /* display: inline-block; */
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+/* 星星 */
+.homestar {
+    transform: scale(0.1);
+}
+
+polygon:hover {
+    fill: red
+}
+
+.star {
+    float: left;
+}
+
+
+
+/* 頁籤 */
+
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin-left: 20%;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.pagination li a.pagetag {
+    background-color: #F29F04;
+    color: white;
+    border-radius: 5px;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #F2E204;
+}
+
+/* 台灣 */
+
+
+svg {
+
+    height: 100vh
+}
+
+
+path {
+    position: relative;
+    stroke: white;
+    fill: gray;
+    transition: 0.5s;
+    cursor: pointer;
+
+    transform: translate(-5px, -5px)
+}
+
+path:hover {
+
+    fill: yellow
+}
+
+/* .title_area{
+
+position: absolute;
+right: 20px;
+top: 20px;
+color: white;
+font-size: 25px
+} */
+/* 
+hr {
+
+    width: 100px;
+    margin-left: 0;
+    border: none;
+    border-bottom: solid 2px yellow
+} */
+
+
+/* .forcast h2,
+h4,
+h5 {
+
+    margin: 0
+} */
+/* 地圖圖片 */
+/* .forcast {
+    float: right;
+} */
+.homecard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;   
+    border-radius: 5px;
+    float: left ;
+    margin-top: 20px;
+    
+  }
+  .homecard2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 5px;
+    float:left;    
+    margin: 20px 100px 0 0;
+  }
+  .homecard3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 5px;
+    margin: 20px 100px 0 0;
+    float: left;     
+    /* clear: left; */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .mapimg1,
+  .mapimg2,
+  .mapimg3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    /* min-height: 100%; */
+    /* max-width: 100%; */
+  }
+  
+  
+  .homecontainer {
+    padding: 2px 16px;
+  }
+  
+  /* 排序按鈕 */
+  .sortBtn{
+    background-color: transparent;
+    border-style: none;
+    color: #8C5C02;
+    padding: 5px 0;
+    margin:2px 5px;
+    font-size:18px;
+  }
+ 
+
+.sortBtn:hover {
+    color: #F29F04;
+   
+    transform: scale(1.1);
+    }
+.t1,
+.t2,
+.t3{
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow:hidden;
+}
+/* 篩選欄圖片 */
+.homeimg2{
+    width: 20px;
+    /* margin-top: 20px; */
+    /* float: left; */
+    /* margin-right:60px ; */
+    
+}
+/* 字型 */
+.areanum{
+    
+    border-style: none;
+    color: #8C5C02;
+    padding: 5px 0;
+    margin:2px 5px;
+    font-size:18px;
+  }
+
+  .homerightup2{
+    margin-left: 50px;
+  }
+
+  #retop{
+    width: 50px;
+    height: 50px;
+    /* background-image: url(../public/images/20220520170357-1298d211.jpg); */
+    position: fixed;
+    /* bottom: 0; */
+    top: 600px;
+    right: 0;
+    border-radius:50%;
+    text-align:center;
+    background-color:#8C5C02;
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position: center;
+    visibility: hidden;
+  }
